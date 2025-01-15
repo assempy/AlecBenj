@@ -1,0 +1,99 @@
+import './style.css';
+import two_wind from './2wind.jpeg';
+import B9 from './B9.jpg';
+import React from 'react';
+
+function Must_have_been_the_wind_song() {
+  const lyrics = [
+    "I heard a glass shatter on the wall in the apartment above mine",
+    "At first I thought that I was dreamin'",
+    "But then I heard the voice of a girl",
+    "And it sounded like she'd been cryin'",
+    "Now I'm too worried to be sleepin'",
+    "So I took the elevator to the second floor",
+    "Walked down the hall and then I knocked upon her door",
+    "She opened up and I asked about the things I've been hearing",
+    "She said, 'I think your ears are playing tricks on you'",
+    "Sweater zipped up to her chin",
+    "'Thanks for caring, sir, that's nice of you",
+    "But I have to go back in",
+    "Wish I could tell you about the noise",
+    "But I didn't hear a thing'",
+    "She said, 'It must have been the wind, must have been the wind",
+    "Must have been the wind, it must have been the wind'",
+    "She said, 'It must have been the wind, must have been the wind",
+    "Must have been the wind, it must have been the wind'",
+    "So I was layin' on the floor of my room",
+    "Cold concrete on my back",
+    "No, I just couldn't shake the feeling",
+    "I didn't want to intrude 'cause I knew that I didn't have all the facts",
+    "But I couldn't bear the thought of leavin' her",
+    "So I took the elevator to the second floor",
+    "Walked down the hall and then I knocked upon her door",
+    "She opened up and I asked about the things I've been hearing",
+    "She said, 'I think your ears are playing tricks on you'",
+    "Sweater zipped up to her chin",
+    "'Thanks for caring, sir, that's nice of you",
+    "But I have to go back in",
+    "Wish I could tell you about the noise",
+    "But I didn't hear a thing'",
+    "She said, 'It must have been the wind, must have been the wind",
+    "Must have been the wind, it must have been the wind'",
+    "She said, 'It must have been the wind, must have been the wind",
+    "Must have been the wind, it must have been the wind'",
+    "Aim my boombox at the roof, I'm playing 'Lean on Me'",
+    "Just so that she knows that she can lean on me",
+    "And when she hears the words, I hope she knows she'll be okay",
+    "Aim my boombox at the roof, I'm playing 'Lean on Me'",
+    "Just so that she knows that she can lean on me",
+    "And when she hears the words, I know exactly what I'll say",
+    "Promise I'm not playing tricks on you",
+    "You're always welcome to come in",
+    "You could stay here for an hour or two",
+    "If you ever need a friend",
+    "We can talk about the noise, when you're ready, but 'til then",
+    "I'll say, 'It must have been the wind, must have been the wind",
+    "Must have been the wind, it must have been the wind'",
+    "I'll say, 'It must have been the wind, must have been the wind",
+    "Must have been the wind, it must have been the wind'",
+  ];
+
+  return (
+    <div className="MustHaveBeenTheWind">
+      <div style={{ width: 1626, height: 1250 }}>
+        <div style={{ width: 1626, height: 245, display: "flex" }}>
+          <img
+            src={two_wind}
+            alt=""
+            style={{
+              height: 85,
+              borderRadius: "50%",
+              marginLeft: 500,
+              marginTop: 100,
+            }}
+          />
+          <p style={{ marginTop: 115, marginLeft: 25, fontSize: 50 }}>
+            Must Have Been The Wind
+          </p>
+        </div>
+        <div style={{ display: "flex", paddingLeft: 37 }}>
+          <div style={{ width: 653 }}>
+            <p className="lyrics">
+              {lyrics.map((line, id) => (
+                <span key={id}>
+                  {line}
+                  <br />
+                </span>
+              ))}
+            </p>
+          </div>
+          <div style={{ width: 975, alignContent: "center" }}>
+            <img src={B9} alt="" style={{ width: 736, marginLeft: 150 }} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Must_have_been_the_wind_song;

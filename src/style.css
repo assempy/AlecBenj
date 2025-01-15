@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.Footer {
+    background-color: black;
+    width: 1626px;
+    height: 115px;
+    display: flex;
+}
+.Header { 
+    top: 0;
+    position: fixed; 
+    width: 1626px; 
+    height: 68px; 
+    display: flex; 
+    background-color: black; 
+    justify-content: space-between;
+}
+.plsongA {
+    color: black;
+}
+.plsongA:hover {
+    color: blue;
+    transition: 0.2s;
+}
+.lyrics {
+    font-size: 16px;
+}
